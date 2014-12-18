@@ -1,0 +1,270 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html {
+    overflow-y: scroll;
+}
+html, body {
+    background-color: #AAAAAA;
+	font-family: Droid, "Times New Roman", Times, serif;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+a {
+	outline: none;	
+}
+@font-face {
+    font-family: "ZeroThree";
+    src: url("../../../fonts/zerothre.ttf");		
+}
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("../../../fonts/ArialNarrowMTStd.otf");
+}
+@font-face {
+    font-family: "Trump Gothic Med";
+    src: url("../../../fonts/Trump Gothic East Medium.eot");
+}
+@font-face {
+    font-family: "Trump Gothic Med";
+    src: url("../../../fonts/Trump Gothic East Medium.ttf");
+}
+@font-face {
+    font-family: "Trump Gothic";
+    src: url("../../../fonts/Trump Gothic East.eot");
+}
+@font-face {
+    font-family: "Trump Gothic";
+    src: url("../../../fonts/Trump Gothic East.ttf");
+}
+@font-face {
+    font-family: "Droid";
+    src: url("../../../fonts/DroidSerif-Regular.eot");
+}
+@font-face {
+    font-family: "Droid";
+    src: url("../../../fonts/DroidSerif-Regular.ttf");
+}
+div.clear {
+	clear: both;	
+}
+div#mainwrapper {
+	width: 980px;
+	margin: 0 auto;
+	min-height: 1000px;
+	background-color: #FFF;
+	border-left: 1px solid #333;
+	border-right: 1px solid #333;
+	-moz-box-shadow: 0 0 4px 4px #464646;
+	-webkit-box-shadow: 0 0 4px 4px #464646;
+	box-shadow: 0 0 4px 4px #464646;
+}
+header {
+	display: block;
+	position: relative;
+	height: 620px;
+}
+a#logo {
+	background-image: url(../../../images/site/rb-logo.png);
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+nav {
+	position: absolute;
+	right: 50px;
+	top: 70px;
+	* line-height: 1.1;	
+}
+nav ul {
+	list-style: none;	
+}
+nav ul li {
+	font-family: Trump Gothic Med, Bebas Neue, Arial Narrow, Helvetica, sans-serif;
+	float: left;
+	margin-right: 15px;
+	font-size: 25px;
+	color: #555;
+	cursor: pointer;
+}
+nav ul li:hover {
+	color: #25A1E5;
+}
+section#slideshow {
+	display: block;
+	position: absolute;
+	height: 490px;
+	top: 130px;
+	width: 980px;
+}
+header a#prev {
+	left: -60px;
+}
+header a#next {
+	background-position: 0 32px;
+	right: -60px;
+}
+header a#prev:hover {
+	background-position: 32px 0;
+}
+header a#next:hover {
+	background-position: 32px 32px;
+}
+header a#prev, header a#next {
+	background-image:url(../../../images/site/nav-arrows.png);
+	position: absolute;
+	display: block;
+	top: 335px;
+	width: 32px;
+	height: 33px;
+	text-indent: -99999px;
+}
+section#headline {
+	position: relative;
+	display: block;
+	padding: 5px 0;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+section#headline div#headline-wrapper {
+	background-color: #222;
+	background: url(../../../images/site/rb-headline.png) #222222 no-repeat;	
+	height: 170px;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
+	position: relative;
+}
+section#headline a#learn-more {
+	background: url(../../../images/site/learn-more.png) no-repeat;
+	height: 45px;
+	width: 110px;
+	position: absolute;
+	text-indent: -99999px;
+	color: #444;
+	top: 110px;
+	left: 435px;
+	cursor: pointer;
+}
+section#headline a#learn-more:hover {
+	background: url(../../../images/site/learn-more-hover.png) no-repeat;
+}
+section#headline div#rb-desc {
+	color: #AAA;
+	line-height: 32px;
+	padding: 50px;
+	top: 140px;
+	position: absolute;
+	display: none;
+	font-family: Droid, "Times New Roman", Times, serif;
+	width: 450px;
+	font-size: 13px;
+}
+section#headline div#rb-desc p {
+	margin-bottom: 20px;
+}
+section#featured-work, section#featured-articles {
+	border-bottom: 1px solid #CCC;
+	display: block;
+	padding: 40px 15px;
+}
+div.panel-col {
+	width: 200px;
+	float: left;
+	margin: 0 25px;	
+}
+div.panel-col h4 {
+	font-size: 26px;
+	font-family: Trump Gothic Med;
+	color: #444444;
+	border-bottom: 1px solid #CCCCCC;
+	height: 35px;
+}
+div.panel-col a {
+	outline: none;
+	text-decoration: none;
+	color: #777777;
+	font-size: 12px;	
+}
+footer {
+	background-color: #171717;
+	height: 150px;
+	padding: 40px 15px;
+}
+footer div.footer-column {
+	width: 260px;
+	float: left;
+	margin: 0 25px;
+}
+footer h3 {
+	font-size: 22px;
+	height: 42px;
+	font-family: Trump Gothic Med;
+	color: #CCCCCC;
+	border-bottom: 2px solid #222;
+	margin: 0 0 15px;
+}
+footer p {
+	color: #BBBBBB;
+	font-size: 12px;
+	line-height: 20px;	
+}
+footer a#connect-twitter, footer a#connect-facebook, footer a#connect-rss, footer a#connect-contact {
+	display: block;
+	width: 32px;
+	height: 32px;
+	float:left;
+	margin-right: 10px;
+	text-indent: -99999px;
+}
+footer a#connect-facebook {
+	background: url(../../../images/site/rb-social-icons-bw.png) no-repeat;
+}
+footer a#connect-twitter {
+	background: url(../../../images/site/rb-social-icons-bw.png) no-repeat;
+	background-position: -32px 0;
+}
+footer a#connect-rss {
+	background:url(../../../images/site/rb-social-icons-bw.png) no-repeat;
+	background-position: -64px 0;
+}
+footer a#connect-facebook:hover {
+	background: url(../../../images/site/rb-social-icons.png) no-repeat;
+}
+footer a#connect-twitter:hover {
+	background: url(../../../images/site/rb-social-icons.png) no-repeat;
+	background-position: -32px 0;
+}
+footer a#connect-rss:hover {
+	background:url(../../../images/site/rb-social-icons.png) no-repeat;
+	background-position: -64px 0;
+}

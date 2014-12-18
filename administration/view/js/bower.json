@@ -1,0 +1,12 @@
+{
+  "name": "RevenantBlue",
+  "version": "0.3.10",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "jquery-ui": "~1.11.2",
+    "tinysort": "*",
+    "jquery-validation": "~1.13.1",
+    "plupload": "~2.1.2"
+  },
+  "devDependencies": {}
+}

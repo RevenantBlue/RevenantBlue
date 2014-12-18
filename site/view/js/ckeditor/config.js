@@ -1,0 +1,28 @@
+/**
+ * @license Copyright (c) 2003-2013, CKSource - Frederico Knabben. All rights reserved.
+ * For licensing, see LICENSE.html or http://ckeditor.com/license
+ */
+
+CKEDITOR.editorConfig = function( config ) {
+	// Define changes to default configuration here. For example:
+	// config.language = 'fr';
+	// config.uiColor = '#AADC6E';
+	
+	//config.toolbarCanCollapse = true;
+	config.extraPlugins = 'oembed,widget';
+	
+	// Remove advanced tabs from image and link dialogs.
+	config.removeDialogTabs = 'image:advanced;link:advanced';
+	
+	config.toolbar = [
+		{ name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ], items: [ 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat' ] },
+		{ name: 'listsindents', items: [ 'NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote' ] },
+		{ name: 'links', items: [ 'Link', 'Unlink' ] },
+		{ name: 'images', items: [ 'Image', 'oembed', 'Smiley' ] },
+		'/',
+		{ name: 'font', items: [ 'Font', 'FontSize' ] },
+		{ name: 'clipboard', items: [ 'Undo', 'Redo', '-', 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord' ] },
+		{ name: 'alignment', items: [ 'JustifyLeft', 'JustifyCenter', 'JustifyRight' ] },
+		{ name: 'tools', items: [ 'Maximize' ] }
+	];
+};

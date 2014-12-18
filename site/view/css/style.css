@@ -1,0 +1,1220 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none outside none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html {
+    overflow-y: scroll;
+}
+html, body {
+    background-color: #555555;
+    background-image: url("../../../images/gradientmain.png");
+    background-repeat: repeat-x;
+    font-family: Arial,Helvetica,sans-serif;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Trump Gothic";
+    src: url("../../../fonts/Trump Gothic East Bold.eot"); /* EOT file for IE */
+}
+@font-face {
+    font-family: "Trump Gothic";
+    src: url("../../../fonts/Trump Gothic East Bold.ttf");
+}
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("../../../fonts/ArialNarrowMTStd.otf");
+}
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../../../fonts/HelveticaNeue-Light.otf");
+}
+@font-face {
+	font-family: "Bebas Neue";
+	src: url("../../../fonts/BebasNeue.otf");	
+}
+@font-face {
+    font-family: "FrancoisOne";
+    src: url("../../../fonts/FrancoisOne.eot");
+}
+@font-face {
+    font-family: "FrancoisOne";
+    src: url("../../../fonts/FrancoisOne.ttf");
+}
+a.hover:hover {
+    text-decoration: underline;
+}
+.block {
+    display: block;
+}
+.clear {
+    clear: both;
+    visibility: hidden;
+}
+div.errors {
+    color: #CC3300;
+    font-size: 12px;
+    margin: 0 0 20px;
+}
+#mainwrapper {
+    height: auto !important;
+    margin: 0 auto -46px;
+    min-height: 100%;
+    width: 980px;
+}
+div#container {
+    background-color: #FFFFFF;
+    border-top: medium none;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+	overflow: hidden;
+    zoom: 1;
+}
+#topwrap {
+    background-image: url("../../../images/gradientmain.png");
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-align: center;
+    width: 980px;
+}
+#logo {
+    border: medium none;
+    float: left;
+    margin-top: 6px;
+    outline: medium none;
+}
+div#logo img {
+    border: medium none;
+    outline: medium none;
+}
+ul#nav ul {
+    list-style: none outside none;
+}
+ul#nav li {
+    float: right;
+    list-style-type: none;
+}
+ul#nav a {
+    color: #BBBBBB;
+    display: block;
+    float: left;
+    font-family: Trump Gothic;
+    font-size: 20px;
+    height: 45px;
+    outline: medium none;
+    overflow: hidden;
+    padding: 14px 12px 12px;
+    text-decoration: none;
+    width: 40px;
+}
+ul#nav a:link {
+    text-decoration: none;
+}
+.menu-selected {
+    background: url("../../../images/menu-gradient.png") repeat-x scroll 0 0 transparent;
+    color: #FFFFFF !important;
+}
+.menu-large {
+    width: 60px !important;
+}
+div#top-bar {
+    background-color: #555555;
+    margin-bottom: 5px;
+    width: 100%;
+}
+#search {
+    padding: 8px;
+    position: relative;
+    text-align: right;
+}
+#search-input {
+    margin-right: 7px;
+    position: relative;
+}
+#search-icon {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+}
+#search-field {
+    color: #555555;
+}
+#imageshow {
+    margin-bottom: 25px;
+    min-height: 375px;
+}
+#mainbody {
+    background-color: #333333;
+    color: #222222;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    zoom: 1;
+}
+h2.frontpage-header {
+    background-color: #2A3C4C;
+    border-bottom: 1px solid #FFFFFF;
+    color: #CCCCCC;
+    font-size: 22px;
+    padding: 5px 5px 5px 15px;
+}
+div.frontpage-widget {
+    color: #FFFFFF;
+    font-family: Trump Gothic;
+    font-size: 30px;
+}
+#frontpage_left {
+    clear: left;
+    float: left;
+    width: 20%;
+}
+#frontpage_left img {
+    border: medium none;
+}
+#frontpage_left a {
+    outline: medium none;
+    text-decoration: none;
+}
+#social_body {
+    clear: left;
+    float: left;
+    width: 100%;
+}
+#social_div-1 {
+    text-align: center;
+}
+.social_icons-1 {
+    margin: 5px;
+    text-align: center;
+}
+#frontpage_middle {
+    background-color: #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    float: left;
+    font-size: 11px;
+    width: 524px;
+}
+#frontpage_right {
+    float: left;
+    width: 25.2%;
+}
+img.index-img {
+    border: 1px solid #555555;
+}
+div.album-list {
+    clear: left;
+    float: left;
+    padding: 10px;
+}
+div.album-list-image {
+    float: left;
+    padding: 3px 10px 10px;
+    width: 225px;
+}
+div.album-list-container {
+    float: left;
+    padding-bottom: 20px;
+    width: 250px;
+}
+div.album-list-container p {
+    margin: 10px 0 12px;
+	line-height: 16px;
+}
+div.album-list-container a {
+    color: #444444;
+    text-decoration: none;
+}
+div.album-list-container a:hover {
+    text-decoration: underline;
+}
+div.blog-list-container p {
+    margin: 10px 0 12px;
+	line-height: 16px;
+}
+div.blog-list-container a {
+    color: #444444;
+    text-decoration: none;
+}
+div.blog-list-container a:hover {
+    text-decoration: underline;
+}
+.blog-list {
+    clear: left;
+    float: left;
+    padding: 10px;
+}
+div.blog-list-container {
+    float: left;
+    padding-bottom: 20px;
+    width: 300px;
+}
+div.blog-list-container a {
+    color: #444444;
+    text-decoration: none;
+}
+div.blog-list-container a:hover {
+    text-decoration: underline;
+}
+.blog-list-image {
+    float: left;
+    padding: 3px 10px 10px;
+    width: 175px;
+}
+div.list-title {
+    color: #2664A1;
+    font-family: Arial;
+    font-size: 20px;
+}
+div.list-date {
+    color: #666666;
+}
+.blog-list-summary {
+    margin-top: 5px;
+}
+.list-separator {
+    background: url("../../../images/dotted-line.gif") repeat-x scroll 0 0 transparent;
+    clear: both;
+    margin: 0 auto;
+    width: 480px;
+}
+div.right-menu {
+    color: #CCCCCC;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+}
+div.right-menu h3 {
+    border-bottom: 1px dotted #1C1C1C;
+    font-family: Trump Gothic;
+    font-size: 22px;
+    padding: 5px 15px;
+}
+.right-menu:hover {
+    background-color: #2C2C2C;
+    color: #49A7F5;
+}
+.clean-header {
+    font-family: Helvetica Neue;
+    margin-bottom: 20px;
+    color: #398FE3;
+    font-size: 30px;	
+}
+div#login-wrapper {
+    background-color: #333333;
+    background-image: url("../../views/images/about-gradient.png");
+    background-repeat: repeat-x;
+    border: 1px solid #666666;
+    margin: 10px;
+}
+div#login {
+    border: 1px solid #666;
+    width: 900px;
+	margin: 30px auto;
+}
+div#login h2 {
+    color: #DDDDDD;
+    font-family: Arial Narrow;
+    font-size: 30px;
+    margin: 15px 0;
+}
+div#login input#login-button {
+    margin-top: 10px;
+}
+div#login div#login-padding {
+    background-color: #111;
+    padding: 30px 50px 30px 40px;
+}
+form#login-form input.login-field {
+    background-color: #FFFFFF;
+    border: 1px solid #888888;
+    color: #222222;
+    display: block;
+    font-size: 18px;
+    margin: 5px 0 15px;
+    padding: 4px;
+    width: 80%;
+}
+form#login-form label {
+    color: #DDDDDD;
+    font-weight: bold;
+}
+div#login-register h3 {
+    border-top: 1px dotted #444;
+    color: #DDDDDD;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 25px 0;
+}
+div#login-register {
+    margin: 30px 0;
+}
+div#login-register a, img {
+    border: medium none;
+    outline: medium none;
+}
+.footer, .push {
+    height: 45px;
+}
+.footer {
+    background-color: #111111;
+    border-top: 1px solid #CCCCCC;
+    clear: both;
+    color: #AAAAAA;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+.footer p {
+    margin: 16px auto 0;
+    width: 980px;
+}
+#footercontents {
+    margin-left: auto;
+    margin-right: auto;
+}
+div#four-oh-four {
+    color: #333333;
+    font-family: Arial Narrow;
+    padding: 150px 150px 200px;
+}
+div#four-oh-four h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+/* Begin Blog Style */
+
+label {
+    display: block;
+}
+
+div#blog {
+    background-color: #FFFFFF;
+    border-top: medium none;
+    color: #222222;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 700px;
+    width: 100%;
+}
+div#blog a {
+	text-decoration: none;
+	color: #EEEEEE;	
+}
+div#blog a:hover {
+	text-decoration: underline;	
+}
+div#blog-main {
+    float: left;
+    margin: 30px;
+    width: 650px;
+}
+#blog_right {
+    float: right;
+    margin: 30px 15px 30px 0;
+    padding-bottom: 40px;
+    width: 240px;
+}
+#bloginput {
+    background-color: #DDDDDD;
+    border: 1px solid #333333;
+    padding: 40px;
+}
+#blog_header {
+    min-height: 30px;
+}
+.blogentry {
+    float: left;
+    width: 100%;
+}
+div#blog_right div.panel {
+    margin: 0 auto;
+    width: 100%;
+}
+div#blog_right div.panel-head {
+    background-color: #2A3C4C;
+    padding: 5px;
+}
+div#blog_right div.panel-head h3 {
+    color: #EEEEEE;
+    font-family: Trump Gothic;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+div#blog_right div.panel-content {
+    border-top: 1px solid #FFFFFF;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    padding-bottom: 20px;
+}
+div#blog_right div.panel-content a {
+    color: #333333;
+}
+div#blog_right div.panel-content a:hover {
+    color: #516B79;
+    text-decoration: underline;
+}
+div.popular-entry {
+    font-size: 16px;
+    padding: 5px;
+}
+div.recent-comment {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+div.recent-comment p.recent-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.category-name {
+    font-size: 16px;
+    list-style: none outside none;
+    padding: 5px;
+}
+.blog_top {
+    background-color: #333333;
+    border: 1px solid #111111;
+    padding: 5px 10px;
+}
+.blog_title a {
+    color: #FFFFFF;
+    font-family: Arial Narrow;
+    font-size: 24px;
+    text-decoration: none;
+}
+.blog_title a:hover {
+    text-decoration: underline;
+}
+.blog_name_date {
+    color: #BBBBBB;
+    font-size: 11px;
+	margin-top: 2px;
+}
+div.content {
+    font-family: Arial,Helvetica,sans-serif;
+    line-height: 1.3em;
+    margin: 25px 25px 35px 10px;
+}
+div.content p {
+    margin-bottom: 12px;
+}
+.content h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+.content h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+.content h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.content h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.content h5 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.content h6 {
+    font-size: 12px;
+    font-weight: bold;
+}
+.last_edited {
+    color: #555555;
+    font-size: 10px;
+    font-style: italic;
+    margin: 10px 10px 10px 12px;
+}
+.bottom {
+    color: #333333;
+    font-size: 12px;
+    margin: 25px 25px 35px 10px;
+}
+.bottom h3 {
+    font-size: 16px;
+}
+.bottom a {
+    color: #555555;
+    text-decoration: none;
+}
+.bottom a:hover {
+	color: #516B79;	
+}
+.bottom-separator {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bottom_edit {
+    float: left;
+    margin-left: 430px;
+}
+.bottom_edit a {
+    color: #0066CC;
+}
+.bottom_edit a:hover {
+    text-decoration: underline;
+}
+.bottom_delete {
+    float: left;
+}
+.bottom_delete a {
+    color: #0066CC;
+}
+.bottom_delete a:hover {
+    text-decoration: underline;
+}
+.blog_category {
+    clear: both;
+    font-size: 12px;
+    margin-top: 10px;
+}
+#comment-number {
+    background-color: #444444;
+    border: 1px solid #333333;
+    clear: left;
+    font-family: Trump Gothic;
+    padding: 5px 10px;
+}
+.comment_label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.comment_name {
+    background-color: #DDDDDD;
+    display: block;
+    margin-left: 25px;
+    margin-right: 100px;
+    padding: 5px 0 5px 20px;
+}
+div.comment {
+    clear: left;
+    float: left;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+div.comment a:hover, div.comment div.comment-reply:hover, div.comment div.comment-likeit:hover, div.comment-flag:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+div.comment-name {
+    background-color: #EEEEEE;
+    border: 1px solid #BBBBBB;
+    color: #333333;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 10px;
+}
+a.comment-date {
+    color: #888888;
+    font-size: 11px;
+    font-weight: bold;
+	margin-left: 10px;
+}
+div.comment-content {
+    font-size: 11px;
+	line-height: 16px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+	padding: 0 10px;
+}
+div.comment-footer {
+	text-align: right;
+	font-size: 11px;
+	height: 16px;	
+}
+div.comment-footer a {
+	color: #333;
+	margin-right: 10px;
+}
+div.comment-flag {
+	display: none;
+	float: left;
+	margin-left: 10px;	
+}
+div.comment-thumbup, div.comment-likeit, div.comment-likes, div.comment-reply {
+	float: right;
+}
+div.comment-thumbup {
+	background:url(../../../images/icons/16/thumb_up.png) center center no-repeat;
+	margin-top: -4px;
+	margin-right: 2px;	
+}
+div.comment-flag-icon{
+	background:url(../../../images/icons/16/flag.png) center center no-repeat;
+	margin-left: 10px;
+	float: left;
+	margin-top: -2px;
+}
+div.comment-thumbup, div.comment-flag-icon {
+	width: 16px;
+	height: 16px;
+}
+div.comment-reply a {
+    color: #3C658D;
+}
+div.comment-likeit, div.comment-likes {
+	margin-right: 10px;	
+}
+div.comment-reply-box {
+	float: left;
+	background-color: #EEE;
+	border: 1px solid #CCC;
+	width: 95%;
+	padding: 14px;
+}
+div.comment-reply-box h2 {
+	font-family: Helvetica Neue;
+	font-size: 22px;
+	margin-bottom: 15px;
+	color: #333;
+}
+div.comment-reply-box textarea, textarea#com_content {
+	border: 1px solid #AAA;
+	width: 98%;
+	max-width: 98%;
+	padding: 5px;
+}
+div.reply-submit, div.reply-cancel {
+	background-color: #3C658D;
+	padding: 7px;
+	float: right;
+	margin: 15px 0 0 10px;
+	color: #FFF;
+	font-size: 16px;
+	border: 1px solid #CCC;
+	font-family: Arial;
+	cursor: pointer;
+	border: 1px solid #2A3C4C;
+}
+div#comment-submit {
+	color: #FFF;
+	font-size: 16px;
+	border: 1px solid #CCC;
+	font-family: Arial;
+	cursor: pointer;
+	border: 1px solid #2A3C4C;
+	background-color: #3C658D;
+	padding: 7px;
+	float: right;
+}
+.comment_error {
+    color: #CC3300;
+    font-size: 12px;
+}
+.comment_label {
+    color: #444444;
+    font-size: 12px;
+    font-weight: bold;
+}
+.comment-separator {
+    background-color: #444444;
+    clear: left;
+    float: left;
+    height: 2px;
+    margin: 35px;
+    width: 710px;
+}
+.comment-head1 {
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.comment-head2 {
+    color: #EEEEEE;
+    font-size: 22px;
+}
+.comment-head3 {
+    color: #EEEEEE;
+    font-size: 22px;
+    margin-left: 10px;
+}
+div#post-comment-anchor {
+	visibility: hidden;	
+}
+div#post-comment {
+    clear: left;
+    float: left;
+	margin-top: 10px;
+    margin-bottom: 100px;
+    width: 100%;
+}
+div#post-comment h3 {
+    background-color: #516B79;
+    border: 1px solid #999999;
+    clear: left;
+    color: #FFFFFF;
+    font-family: Trump Gothic;
+    font-size: 22px;
+    margin-top: 100px;
+    padding: 5px 10px;
+}
+div#post-comment div#post-comment-content {
+    margin: 20px 10px 10px 20px;
+}
+div#post-comment div#post-comment-content a {
+    color: #516B79;
+}
+div#comments-disabled {
+	margin: 15px 10px;
+	font-size: 16px;
+}
+#blog .links {
+    clear: both;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    margin: 75px auto;
+    min-height: 30px;
+    text-align: center;
+    width: inherit;
+}
+#blog .links ul {
+    display: inline-block;
+}
+#blog .links li {
+    float: left;
+    list-style: none outside none;
+    margin-right: 2px;
+}
+#blog .links a {
+    border: 1px solid #8DADCC;
+    margin-right: 2px;
+    outline: medium none;
+    text-decoration: none;
+}
+#blog .links a:hover {
+    text-decoration: none;
+}
+#blog .links .selected a {
+    background: none repeat scroll 0 0 #3C658D;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-weight: bold;
+    padding: 5px 16px;
+}
+#blog .links .paginate a {
+    color: #4B7AA8;
+    display: block;
+    float: left;
+    padding: 5px 16px;
+    text-decoration: none;
+}
+#blog .links .paginate a:hover {
+    border: 1px solid #0F477E;
+}
+#blog .links .paginationNav a {
+    border: 1px solid #8DADCC;
+    color: #4B7AA8;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 5px 16px;
+}
+#blog .links .paginationNav a:hover {
+    border: 1px solid #0F477E;
+}
+
+/* End Blog Style */
+
+/* Begin Photo Gallery Style */
+
+img {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    outline: medium none;
+    text-decoration: none;
+}
+#portfolio-banner h1 {
+    background-color: #517965;
+    color: #EEEEEE;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding: 12px 12px 12px 15px;
+    width: 475px;
+}
+div#gallery-content {
+    color: #222222;
+    font-family: Arial,Helvetica,sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+}
+div.gallery {
+    background-color: #1A1A1A;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 7px 0;
+    text-align: center;
+}
+.galleria-container {
+    background-color: #1A1A1A;
+    margin-left: auto;
+    margin-right: auto;
+}
+.galleria-info-link {
+    background-color: #1A1A1A;
+}
+.photos {
+    background-color: #333333;
+    border: 1px solid #000000;
+    display: inline-block;
+    height: 140px;
+    margin: 5px 2px;
+    padding: 5px;
+    vertical-align: top;
+    width: 216px;
+}
+.photos:hover {
+    background-color: #2C2C2C;
+}
+.photo_placeholder {
+    background-color: #333333;
+    border: 1px solid #000000;
+    display: inline-block;
+    height: 140px;
+    margin: 5px 2px;
+    padding: 5px;
+    vertical-align: top;
+    width: 216px;
+}
+.thumbnail_images {
+}
+.caption {
+    color: #EEEEEE;
+    display: block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 3px;
+    overflow: hidden;
+    text-align: left;
+    width: 220px;
+}
+div.photogallery {
+    background-color: #000000;
+    min-height: 560px;
+}
+#photogallery_top {
+    color: #333333;
+    font-size: 11px;
+}
+.top_text {
+    margin: 10px 12px;
+}
+.top_text a {
+    color: #1A7AD8;
+}
+.top_text a:hover {
+    text-decoration: underline;
+}
+div#to-albums {
+    background-color: #222222;
+    border: 1px solid #000000;
+    color: #BBBBBB;
+    cursor: pointer;
+    font-family: Trump Gothic;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 3px 4px;
+    text-align: center;
+}
+div#to-albums:hover {
+    background-color: #111111;
+    color: #49A7F5;
+}
+.links {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    margin: 7px 0;
+    text-align: center;
+}
+.links ul {
+    display: inline-block;
+}
+.links li {
+    float: left;
+    list-style: none outside none;
+}
+.links a {
+    border: 1px solid #000000;
+    margin: 0 2px;
+    outline: medium none;
+    text-decoration: none;
+}
+.selected a {
+    background: none repeat scroll 0 0 #123D63;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 2px;
+    padding: 6px 9px;
+}
+.paginate a {
+    background-color: #333333;
+    color: #BBBBBB;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 4px;
+    padding: 6px 9px;
+    text-decoration: none;
+}
+.paginate a:hover {
+    background-color: #2C2C2C;
+}
+.prevInactive {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #BBBBBB;
+    display: block;
+    float: left;
+    font-family: Trump Gothic;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px !important;
+    padding: 3px 4px;
+    width: 325px;
+}
+.nextInactive {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #BBBBBB;
+    display: block;
+    float: left;
+    font-family: Trump Gothic;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px !important;
+    padding: 3px 4px;
+    width: 325px;
+}
+.paginationNav a {
+    background-color: #333333;
+    border: 1px solid #000000;
+    color: #BBBBBB;
+    display: block;
+    float: left;
+    font-family: Trump Gothic;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px 4px;
+    width: 325px;
+}
+.paginationNav a:hover {
+    background-color: #2C2C2C;
+    color: #49A7F5;
+}
+/* End Photo Gallery Style */
+
+/* Begin Contact Style */
+
+#contact-content {
+    background-color: #111111;
+    border: 1px solid #666666;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 30px;
+    padding: 40px;
+    width: 534px;
+}
+#contact-right {
+    background-color: #111111;
+    border: 1px solid #666666;
+    clear: right;
+    float: right;
+    margin-bottom: 100px;
+    width: 250px;
+}
+#contact-right-padding {
+    padding: 40px;
+}
+#contact-wrapper {
+    background-color: #333333;
+    background-image: url("../../views/images/about-gradient.png");
+    background-repeat: repeat-x;
+    border: 1px solid #666666;
+    color: #CACACA;
+    float: left;
+    margin: 10px;
+    padding: 30px;
+}
+label.form-label {
+    color: #EEEEEE;
+    font-family: Trump Gothic;
+    font-size: 28px;
+    margin-top: 8px;
+    padding: 20px 0;
+}
+input.contactField, textarea.contactField {
+    color: #444444;
+    font-size: 22px;
+}
+
+/* End Contact Style */
+
+/* Begin Service Style */
+
+#services-content {
+    color: #CACACA;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 30px 23px;
+}
+#services-wrapper {
+    background-color: #333333;
+    background-image: url("../../views/images/about-gradient.png");
+    background-repeat: repeat-x;
+    border: 1px solid #666666;
+    float: left;
+    margin: 10px;
+}
+#services-content-header {
+    font-family: Arial Narrow;
+    margin-bottom: 10px;
+}
+#services-header-1 {
+    color: #398FE3;
+    font-size: 31px;
+}
+#services-header-2 {
+    font-size: 38px;
+    margin-left: -15px;
+}
+#services-banner {
+    background: url("../../../images/services-banner.jpg") no-repeat scroll center top transparent;
+    height: 300px;
+    margin-top: 30px;
+    width: 960px;
+}
+div.service-section {
+    background-color: #111111;
+    float: left;
+    height: 350px;
+    margin: 0 7px;
+    padding: 20px;
+    width: 174px;
+}
+div.service-section div.service-header {
+    font-family: Trump Gothic;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+div.service-section p {
+    margin: 12px 0;
+}
+
+/* End Service Style */
+
+/*Begin About Style */
+
+#about-banner h1 {
+    color: #EEEEEE;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 30px;
+    padding: 12px 12px 12px 15px;
+    width: 475px;
+}
+#about-content {
+    background-color: #111111;
+    border: 1px solid #666666;
+    color: #D6D6D6;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-right: 40px;
+    padding: 40px;
+    text-align: justify;
+    width: 356px;
+}
+#about-image {
+    clear: right;
+    float: left;
+    width: 420px;
+}
+#about-image-border {
+    border: 1px solid #454545;
+}
+#about-wrapper {
+    background-color: #333333;
+    background-image: url("../../views/images/about-gradient.png");
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #666666;
+    border-left: 1px solid #666666;
+    border-right: 1px solid #666666;
+    float: left;
+    margin: 10px;
+    padding: 30px 30px 100px;
+}
+#about-content-header {
+    font-family: Helvetica Neue;
+    margin-bottom: 10px;
+}
+#about-header-1 {
+    color: #398FE3;
+    font-size: 28px;
+}
+#about-header-2 {
+    font-size: 30px;
+    margin-left: -15px;
+}
+.about-paragraph {
+    line-height: 21px;
+}
+
+/* End About Style */

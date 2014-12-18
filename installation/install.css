@@ -1,0 +1,348 @@
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, fieldset, a, table, th, tr, td, p, dl, dt, dd, iframe {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	border: 0 none;
+	font: inherit;
+	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+	-moz-box-sizing: border-box;
+}
+html {
+}
+* html .clearfix {
+	height: 1%;
+	overflow: visible;
+}
+* + html .clearfix {
+	min-height: 1%;
+}
+body {
+	color: #444444;
+	font-family: Roboto,sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	width: 100%;
+}
+h2 {
+	color: #3FB1D4;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 15px 0;
+	text-transform: uppercase;
+}
+p {
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 10px 0;
+}
+ol, ul {
+	list-style: none outside none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: none;
+}
+:focus {
+	outline: medium none;
+}
+table {
+	border-collapse: collapse;
+}
+label {
+	display: block;
+}
+label.center-label {
+	padding-left: 15px;
+	text-indent: -15px;
+}
+input.center-toggle {
+	height: 13px;
+	margin: 0 5px 0 0;
+	padding: 0;
+	position: relative;
+	top: -1px;
+	vertical-align: middle;
+	width: 13px;
+}
+input {
+	outline: medium none;
+}
+input[type="text"], input[type="password"], input[type="email"], button, textarea, select {
+	font-family: Roboto,sans-serif;
+	padding: 2px;
+}
+textarea {
+	overflow: auto;
+}
+textarea, input[type="text"], input[type="password"], input[type="file"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="url"], select {
+	background-color: #FFFFFF;
+	border: 1px solid #AAAAAA;
+	box-shadow: none;
+	color: #333333;
+}
+textarea:hover {
+	border: 1px solid #323638;
+	box-shadow: none;
+}
+li {
+	list-style: none outside none;
+}
+:-moz-placeholder {
+	color: #999999;
+}
+*::-moz-placeholder {
+	color: #999999;
+}
+a {
+	color: #3FB1D4;
+	text-decoration: none;
+}
+a:hover {
+	color: #2BADD9;
+	cursor: pointer;
+	text-decoration: underline;
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+pre {
+	border-color: #D2DDE5 #D2DDE5 #C5D0D9;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	color: #353535;
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 20px 0;
+}
+code {
+	background-color: #DCE7F0;
+	font-family: monaco,monospace;
+}
+pre code {
+	background-color: transparent;
+	display: inline-block;
+	font-family: monaco,monospace;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+input[type="button"] {
+	cursor: pointer;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+.vert-space {
+	margin: 10px 0;
+}
+.standout-space {
+	margin: 20px 0;
+}
+.fltlft {
+	float: left;
+}
+.fltrght {
+	float: right;
+}
+.notifications.errors {
+	color: #DE2C38;
+	font-size: 12px;
+}
+.error-txt {
+	margin: 0;
+}
+.sm-txt {
+	width: 60px;
+}
+.med-txt {
+	width: 200px;
+}
+.lg-txt {
+	width: 500px;
+}
+.notifications.success {
+	color: #289EC7;
+	font-size: 14px;
+	margin: 0 5px;
+}
+section#main {
+	background-color: #FFFFFF;
+}
+section#main .inner {
+	padding: 10px 30px 20px;
+}
+header {
+	background-color: #222222;
+	color: #FFFFFF;
+	padding: 6px 20px;
+}
+h1 {
+	color: #0077AA;
+	font-family: Roboto Condensed,Roboto,sans-serif;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+section#errors {
+	margin-bottom: 10px;
+}
+section#errors .errors {
+	background-color: #FFEEEE;
+	border: 1px solid #CC0000;
+	color: #9E2F2F;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 0 0 10px 0;
+}
+section#configuration {
+}
+table.config-table {
+	margin: 0 0 30px 20px;
+	width: 100%;
+}
+table.config-table th {
+	color: #444444;
+	font-family: Roboto Condensed;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 14px 8px;
+	text-align: left;
+	text-transform: uppercase;
+}
+table.config-table td {
+	padding: 5px 12px;
+	vertical-align: middle;
+}
+table.config-table td.config-name {
+	font-size: 13px;
+	font-weight: bold;
+	text-align: right;
+	width: 181px;
+}
+table.config-table td.config-input {
+	width: 380px;
+}
+table.config-table td.config-input div.input-wrap {
+	position: relative;
+}
+table.config-table td.desc {
+	line-height: 20px;
+}
+table.config-table td.config-input p, table.config-table td.desc p {
+	font-size: 12px;
+}
+table.config-table input[type="text"], table.config-table input[type="password"], table.config-table input[type="email"] {
+	font-family: monospace;
+	font-size: 13px;
+	padding: 5px;
+	width: 325px;
+}
+table.config-table label.error {
+	color: #9E2F2F;
+	position: absolute;
+	top: 33px;
+}
+table.config-table td.username {
+	padding: 26px 12px 0;
+}
+table.config-table td.password {
+	border-top: medium none;
+	padding: 20px 12px 23px;
+}
+table.config-table td.confirm {
+	border-top: medium none;
+	padding: 0 12px 26px;
+}
+section#install-success h3 {
+	color: #2c8fc6;
+	font-family: "Roboto Condensed",Roboto,sans-serif;
+	font-size: 29px;
+	font-weight: bold;
+	margin: 30px 0;
+	text-decoration: underline;
+}
+section#install-success h5 {
+	font-size: 16px;
+	margin: 40px 0 20px;
+}
+div#install-actions {
+	float: right;
+	margin: 60px 10px 20px;
+}
+div#redirect-buttons {
+	margin-top: 100px;
+}
+div#redirect-buttons button {
+	margin-right: 20px;
+}
+button.rb-btn {
+	cursor: pointer;
+	padding: 10px 5px;
+}
+button.blue-btn, button.ui-state-default.blue-btn {
+	background-color: #007AB8;
+	background-image: none;
+	border: 1px solid #333333;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+button.blue-btn:hover, button.ui-state-hover.blue-btn {
+	background-color: #0266AB;
+}
+button.gray-btn, button.ui-state-default.gray-btn {
+	background-color: #333333;
+	background-image: none;
+	border: 1px solid #000000;
+	color: #FFFFFF;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+button.gray-btn:hover, button.ui-state-hover.gray-btn {
+	background-color: #2A2A2A;
+}
+button.light-gray-btn, button.ui-state-default.light-gray-btn {
+	background-color: #EEEEEE;
+	background-image: none;
+	border: 1px solid #AAAAAA;
+	color: #555555;
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+button.light-gray-btn:hover, .ui-state-hover.light-gray-btns {
+	background-color: #E7E7E7;
+}
+button#submit-config {
+
+}
+button#restore-config {
+	margin-left: 20px;
+}

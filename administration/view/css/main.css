@@ -1,0 +1,55 @@
+html {
+	height: auto;
+}
+body:after {
+    content: " ";
+    height: 47px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+body:before {
+    content: " ";
+    font-size: 0;
+    height: 100%;
+    left: 220px;
+    min-height: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 1px;
+    z-index: 10;
+}
+body:before {
+    content: " " !important;
+    width: 0 !important;
+}
+div.main-iframe-top {
+	background: none repeat scroll 0 0 #222222;
+	content: " ";
+	height: 47px;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 11;
+}
+form#adminForm button.publish-btn:hover {
+	background-color: #0588BF;
+}
+form#adminForm button.publish-btn, button.unpublish-btn {
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 10px;
+	padding: 2px;
+	width: 130px;
+}
+form#adminForm button.publish-btn {
+	background-color: #0476A5;
+	background-image: none;
+	color: #FFFFFF;
+	margin-left: 14px;
+}

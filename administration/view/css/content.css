@@ -1,0 +1,152 @@
+/* CSS Document */
+body.mceForceColors {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #000000;
+}
+body.mceBrowserDefaults {
+    background: none repeat scroll 0 0 transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+}
+td {
+    color: #000000;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    margin: 8px;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.17em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: 0.83em;
+}
+h6 {
+    font-size: 0.75em;
+}
+.mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {
+    border: 1px dashed #BBBBBB;
+}
+a.mceItemAnchor {
+    -moz-user-modify: read-only;
+    -moz-user-select: all;
+    background: url("../default/img/items.gif") no-repeat scroll center center transparent;
+    display: inline-block;
+    height: 11px !important;
+    width: 11px !important;
+}
+span.mceItemNbsp {
+    background: none repeat scroll 0 0 #DDDDDD;
+}
+td.mceSelected, th.mceSelected {
+    background-color: #3399FF !important;
+}
+img {
+    border: 0 none;
+}
+table, img, hr, .mceItemAnchor {
+    cursor: default;
+}
+table td, table th {
+    cursor: text;
+}
+ins {
+    border-bottom: 1px solid green;
+    color: green;
+    text-decoration: none;
+}
+del {
+    color: red;
+    text-decoration: line-through;
+}
+cite {
+    border-bottom: 1px dashed blue;
+}
+acronym {
+    border-bottom: 1px dotted #CCCCCC;
+    cursor: help;
+}
+abbr {
+    border-bottom: 1px dashed #CCCCCC;
+    cursor: help;
+}
+img:-moz-broken {
+    -moz-force-broken-image-icon: 1;
+    height: 24px;
+    width: 24px;
+}
+font[face="mceinline"] {
+    font-family: inherit !important;
+}
+[contentEditable]:focus {
+    outline: 0 none;
+}
+.mceItemMedia {
+    background-color: #FFFFCC;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px dotted #CC0000;
+}
+.mcePageBreak {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url("../../img/pagebreak.gif") no-repeat scroll center top #FFFFFF;
+    border-color: #CCCCCC -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: dotted none none;
+    border-width: 1px 0 0;
+    display: block;
+    height: 12px;
+    margin-top: 15px;
+    width: 100%;
+}
+body {
+    color: #333333;
+    font-family: Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-size: 13px;
+    line-height: 19px;
+    margin: 10px;
+    min-height: 100%;
+}
+br[data-mce-bogus] {
+    line-height: 1em;
+    margin-top: -1em;
+}
+br[data-mce-bogus]:only-child {
+    line-height: inherit;
+    margin-top: inherit;
+}
+.aligncenter, dl.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.mceIEcenter {
+    text-align: center;
+}
+pre {
+    font: 12px/18px Consolas,Monaco,monospace;
+}
+td {
+    color: #000000;
+    font-size: 11px;
+    margin: 8px;
+}

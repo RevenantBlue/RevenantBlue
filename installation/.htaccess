@@ -1,0 +1,49 @@
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject .eot
+AddOutputFilterByType DEFLATE font/ttf .ttf
+AddOutputFilterByType DEFLATE font/otf .otf
+AddOutputFilterByType DEFLATE application/x-font-woff .woff
+
+AddType application/vnd.ms-fontobject .eot
+AddType font/ttf .ttf
+AddType font/otf .otf
+AddType application/x-font-woff .woff
+
+# Or, compress certain file types by extension:
+<Files *.php>
+SetOutputFilter DEFLATE
+</Files>
+
+# Set php.ini settings.
+php_value  upload_max_filesize  120M
+php_value  post_max_size  120M 
+
+<IfModule mod_rewrite.c>
+
+#FollowSymlinks is turned on and Indexes is turned off.
+#Indexes off prevents the directory structure of a directory without an index file from displaying.
+Options +FollowSymlinks -Indexes
+
+RewriteEngine On
+
+#Send a forbidden message to anyone attempting to access the .htaccess file on the server.
+RewriteRule ^.htaccess$ [F]
+
+#This condition disables include injection through the URL.
+RewriteCond %{QUERY_STRING} (.*)(http|https|ftp):\/\/(.*)
+RewriteRule ^(.+)$ - [F]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+</IfModule>

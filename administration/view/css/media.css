@@ -1,0 +1,72 @@
+/* CSS Document */
+
+.tool-crop {
+	background-position: -134px 5px;
+}
+.tool-crop:hover {
+	 background-position: 6px 5px;
+}
+.tool-crop-inactive {
+	background-position: -64px 5px;
+}
+.tool-rotate-cc {
+	background-position: -904px 5px;
+}
+.tool-rotate-cc:hover {
+	background-position: -764px 5px;
+}
+.tool-rotate-c {
+	background-position: -834px 5px;
+}
+.tool-rotate-c:hover{
+	background-position: -694px 5px;
+}
+.tool-flip-vert {
+	background-position: -414px 5px;
+}
+.tool-flip-vert:hover {
+	background-position: -344px 5px;
+}
+.tool-flip-horz {
+	background-position: -274px 5px;
+}
+.tool-flip-horz:hover{
+	background-position: -204px 5px;
+}
+.tool-undo {
+	background-position: -1114px 5px;
+}
+.tool-undo-inactive {
+	background-position: -1044px 5px;
+}
+.tool-undo:hover {
+	background-position: -974px 5px;
+}
+.tool-redo {
+	background-position: -624px 5px;
+}
+.tool-redo:hover {
+	background-position: -484px 5px;
+}
+.tool-redo-inactive {
+	background-position: -554px 5px;
+}
+
+.crop-active{ background-position: 0 0; width: 20px; height: 20px; }
+.crop-inactive{ background-position: -70px 0; width: 20px; height: 20px; }
+.crop{ background-position: -140px 0; width: 20px; height: 20px; }
+.flip-horz-active{ background-position: -210px 0; width: 20px; height: 20px; }
+.flip-horz{ background-position: -280px 0; width: 20px; height: 20px; }
+.flip-vert-active{ background-position: -350px 0; width: 20px; height: 20px; }
+.flip-vert{ background-position: -420px 0; width: 20px; height: 20px; }
+.redo-active{ background-position: -490px 0; width: 20px; height: 20px; }
+.redo-inactive{ background-position: -560px 0; width: 20px; height: 20px; }
+.redo{ background-position: -630px 0; width: 20px; height: 20px; }
+.rotate-active-c{ background-position: -700px 0; width: 20px; height: 20px; }
+.rotate-active-cc{ background-position: -770px 0; width: 20px; height: 20px; }
+.rotate-c{ background-position: -840px 0; width: 20px; height: 20px; }
+.rotate-cc{ background-position: -910px 0; width: 20px; height: 20px; }
+.undo-active{ background-position: -980px 0; width: 20px; height: 20px; }
+.undo-inactive{ background-position: -1050px 0; width: 20px; height: 20px; }
+.undo{ background-position: -1120px 0; width: 20px; height: 20px; }
+
