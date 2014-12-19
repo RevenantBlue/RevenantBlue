@@ -19,3 +19,15 @@ Revenant Blue is currently in an early open beta state but development will move
 ##Installation
 
 Please refer to the installation instructions here: https://revenantblue.com/guide/quick-installation
+
+## Demo
+
+To see a live demo of Revenant Blue you can visit the demo site:
+
+http://rb-demo.com
+http://rb-demo.com/rbadmin
+
+username: admin
+password: Demo123
+
+The demo resets every 20 minutes.
