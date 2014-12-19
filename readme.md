@@ -16,3 +16,6 @@ Revenant Blue uses MySQL with the PDO abstraction layer as its main database. Po
 
 Revenant Blue is currently in an early open beta state but development will move quickly. For a more comprehensive understanding of Revenant Blue please refer to the guides at http://revenantblue.com/guide
 
+##Installation
+
+Please refer to the installation instructions here: https://revenantblue.com/guide/quick-installation
