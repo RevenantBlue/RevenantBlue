@@ -50,7 +50,15 @@ if($pageToDisplay === 'index') {
 	
 	$rbParsedURL = parse_url($rbURL);
 	$rbSubdomain = explode('.', $rbParsedURL['host']);
-	$hostTest = $rbSubdomain[0] . '.' . $rbSubdomain[1];
+
+	if(!empty($rbSubdomain[1])) {
+		$hostTest = $rbSubdomain[0] . '.' . $rbSubdomain[1];
+	} elseif(!empty($rbSubdomain[0])) {
+		$hostTest = $rbSubdomain[0];
+	} else {
+		$hostTest = '';
+	}
+	
 	if($rbSubdomain[0] !== $_SERVER['HTTP_HOST'] && $hostTest !== $_SERVER['HTTP_HOST'] && $rbSubdomain[0] !== 'www' && !filter_var($_SERVER['HTTP_HOST'], FILTER_VALIDATE_IP)) {
 		require_once DIR_APPLICATION . 'model/pages/pages-main.php';
 		//Instantiate the pages model

@@ -22,9 +22,6 @@ if($_SERVER['REQUEST_METHOD'] === 'GET') {
 		if(!is_writable('../config.php')) {
 			$errors[] = 'Cannot write to /config.php, please allow temporary write privileges to this file.';
 		}
-		if(!is_writable('../.htaccess')) {
-			$errors[] = 'Cannot write to the main .htaccess file, please allow temporary write privileges to this file.';
-		}
 		if(!is_writable('nginx.conf')) {
 			$errors[] = 'Cannot write to /installation/nginx.conf, please allow temporary write privilegs to this file';
 		}
@@ -167,7 +164,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		
 		if($_POST['server'] === 'APACHE') {
 			// Edit the htaccess file and set the backend location environment variable.
-			$htaccess = file('../.htaccess');
+			$htaccess = file('htaccess.txt');
 			/*
 			foreach($htaccess as $key => $htLine) {
 				$htaccess[$key] = str_replace("rbadmin", $_POST['adminLocation'], $htLine);
@@ -332,6 +329,9 @@ function restoreConfig() {
 	copy('config.php', '../config.php');
 	copy('htaccess.txt', '../.htaccess');
 	copy('nginx.txt', 'nginx.conf');
+	if(file_exists('../.htaccess')) {
+		unlink('../.htaccess');
+	}
 }
 
 function getRandomString($length = 8, $symbols = FALSE) {

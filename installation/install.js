@@ -60,11 +60,11 @@ $(document).ready(function() {
 		messages: {
 			adminUsername: {
 				required: "Please enter a username",
-				rangelength: $.format("Enter at least {0} characters")
+				rangelength: $.validator.format("Enter at least {0} characters")
 			},
 			adminPass: {
 				required: "Please enter your password",
-				rangelength: $.format("Enter at least {0} characters")
+				rangelength: $.validator.format("Enter at least {0} characters")
 			},
 			confirmAdminPass: {
 				required: "Please enter the password confirmation",
@@ -114,11 +114,13 @@ $(document).ready(function() {
 	});
 	$("#redirect-to-admin").click(function(e) {
 		e.preventDefault();
-		window.location = HTTP_ADMIN;
+		console.log(window.HTTP_SERVER);
+		window.location = window.HTTP_ADMIN;
 	});
 	$("#redirect-to-site").click(function(e) {
 		e.preventDefault();
-		window.location = HTTP_SERVER;
+		console.log(window.HTTP_SERVER);
+		window.location = window.HTTP_SERVER;
 	})
 
 });
