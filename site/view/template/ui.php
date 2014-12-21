@@ -203,16 +203,9 @@ $(document).ready(function() {
 			<a href="<?php echo HTTP_SERVER; ?>" class="inactive breadcrumb">HOME</a>
 			<span class="spacer"> / </span>
 			
-			<?php if(!empty($_GET['section'])): ?>
-			<a href="<?php echo HTTP_SERVER . str_replace('-', '', hsc($_GET['section'])); ?>" class="inactive">
-				<?php echo strtoupper(str_replace('-', ' ', hsc($_GET['section']))); ?>
-			</a>
-			<span class="spacer"> / </span>
-			<?php endif; ?>
-			
 			<?php if(is_array($overrideUrl)): ?>
 				<?php foreach($overrideUrl as $key => $breadcrumb): ?>
-					<a href="<?php echo $breadcrumb['url']; ?>" class="<?php if(empty($target)): ?>active<?php else: ?>inactive<?php endif; ?> breadcrumb">
+					<a href="<?php echo $breadcrumb['url']; ?>" class="<?php if(empty($target) && $key + 1 === count($overrideUrl)): ?>active<?php else: ?>inactive<?php endif; ?> breadcrumb">
 						<?php echo strtoupper(str_replace('-', ' ', $breadcrumb['title'])); ?>
 					</a>
 					<?php if($key + 1 !== count($overrideUrl)): ?>
@@ -220,22 +213,35 @@ $(document).ready(function() {
 					<?php endif; ?>
 				<?php endforeach; ?>
 			<?php else: ?>
-			<a href="<?php echo HTTP_SERVER . hsc($_GET['controller']); ?>" class="<?php if(empty($target)): ?>active<?php else: ?>inactive<?php endif; ?> breadcrumb">
+			<a href="<?php echo HTTP_SERVER . hsc($_GET['controller']); ?>"
+			   class="<?php if(empty($target) && empty($_GET['section'])): ?>active<?php else: ?>inactive<?php endif; ?> breadcrumb">
 				<?php echo strtoupper(str_replace('-', ' ', hsc($_GET['controller']))); ?>
 			</a>
+				<?php if(!empty($target) || !empty($_GET['section'])): ?>
+				<span class="spacer"> / </span>
+				<?php endif; ?>
+			<?php endif; ?>
+			<?php if(!empty($_GET['section']) && empty($overrideUrl)): ?>
+			<a href="<?php echo HTTP_SERVER . str_replace('-', '', hsc($_GET['section'])); ?>" class="inactive">
+				<?php echo strtoupper(str_replace('-', ' ', hsc($_GET['section']))); ?>
+			</a>
+				<?php if(!empty($target) && !empty($url)): ?>
+				<span class="spacer"> / </span>
+				<?php endif; ?>
 			<?php endif; ?>
 			
 			<?php if(!empty($target) && !empty($url)): ?>
 			<span class="spacer"> / </span>
-			<a href="<?php echo hsc($url); ?>"><?php echo strtoupper(hsc($target)); ?></a>
+			<a href="<?php echo hsc($url); ?>" class="active"><?php echo strtoupper(hsc($target)); ?></a>
 			<?php endif; ?>
 		</section>
 	<?php else: ?>
 		<section id="breadcrumbs">
-			<a id="bc-home" href="<?php echo HTTP_SERVER; ?>" class="breadcrumb">HOME</a>
+			<a id="bc-home" href="<?php echo HTTP_SERVER; ?>" class="breadcrumb active">HOME</a>
 		</section>
 	<?php endif; ?>
 <?php } ?>
+
 <?php function displayForumSearch() { /*>
 	<div id="forum-search">
 		<div class="inner">
