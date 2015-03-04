@@ -2,7 +2,7 @@
 namespace RevenantBlue;
 
 // Version
-define("VERSION", '0.3.12');
+define("VERSION", '0.3.13');
 // Set the development environment.
 define('DEVELOPMENT_ENVIRONMENT', TRUE);
 // Set the server OS
