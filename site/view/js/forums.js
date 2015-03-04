@@ -47,7 +47,7 @@ $(document).ready(function() {
 					classes: 'left,right'
 				},
 				iframe: {
-					attributes: 'width,height,src,allowfullscreen,frameborder,title'
+					attributes: 'id,width,height,src,allowfullscreen,frameborder,title,name,tabindex,type,bgcolor,wmode,flashvars'
 				}
 			}
 		});
